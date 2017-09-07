@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  languages: MyString
+  number: 1
+  difficulty: MyString
+  name: MyString
+
+two:
+  languages: MyString
+  number: 1
+  difficulty: MyString
+  name: MyString
