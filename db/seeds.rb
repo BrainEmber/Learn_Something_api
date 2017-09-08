@@ -7,27 +7,27 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Lesson.create([
-  # {
-  #   name: 'Introduction To JavaScript',
-  #   url: 'https://www.youtube.com/watch?v=T93WOuwUZ3s',
-  #   difficulty: 'Beginner',
-  #   author: 'NotesAndSoft',
-  #   language: 'JavaScript',
-  #   date: 'Sep 7, 2017'
-  # },
-  # {
-  #   name: 'Arrow Functions',
-  #   url: 'https://www.youtube.com/watch?v=rfsWnO980H8',
-  #   difficulty: 'Advanced',
-  #   author: 'Chris Hawkes',
-  #   language: 'JavaScript',
-  #   date: 'Aug 13, 2016'
-  # },
-  #
-  #
-  #
-  # ])
-#
+#   {
+#     name: 'Introduction To JavaScript',
+#     url: 'https://www.youtube.com/watch?v=T93WOuwUZ3s',
+#     difficulty: 'Beginner',
+#     author: 'NotesAndSoft',
+#     language: 'JavaScript',
+#     date: 'Sep 7, 2017'
+#   },
+#   {
+#     name: 'Arrow Functions',
+#     url: 'https://www.youtube.com/watch?v=rfsWnO980H8',
+#     difficulty: 'Advanced',
+#     author: 'Chris Hawkes',
+#     language: 'JavaScript',
+#     date: 'Aug 13, 2016'
+#   },
+  
+  
+  
+#   ])
+
 #   Playlist.create([
 #     {
 #       name: 'JavaScript for Beginners',
@@ -35,8 +35,8 @@
 #       number: 1,
 #       languages: 'JavaScript'
 #     },
-#
-#
-#
-#
+
+
+
+
 #     ])
