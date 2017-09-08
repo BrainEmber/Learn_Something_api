@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170907202049) do
+ActiveRecord::Schema.define(version: 20170908161727) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "ledgers", force: :cascade do |t|
+    t.bigint "playlist_id"
+    t.bigint "lesson_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["lesson_id"], name: "index_ledgers_on_lesson_id"
+    t.index ["playlist_id"], name: "index_ledgers_on_playlist_id"
+  end
 
   create_table "lessons", force: :cascade do |t|
     t.string "url"
@@ -35,4 +44,6 @@ ActiveRecord::Schema.define(version: 20170907202049) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "ledgers", "lessons"
+  add_foreign_key "ledgers", "playlists"
 end
