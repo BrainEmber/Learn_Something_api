@@ -10,7 +10,7 @@
 Lesson.create([
   {
     name: 'Introduction To JavaScript',
-    url: 'https://www.youtube.com/embed/T93WOuwUZ3s',
+    url: 'https://www.youtube.com/watch?v=T93WOuwUZ3s',
     difficulty: 'Beginner',
     author: 'NotesAndSoft',
     language: 'JavaScript',
@@ -18,7 +18,7 @@ Lesson.create([
   },
   {
     name: 'Arrow Functions',
-    url: 'https://www.youtube.com/embed/rfsWnO980H8',
+    url: 'https://www.youtube.com/watch?v=rfsWnO980H8',
     difficulty: 'Advanced',
     author: 'Chris Hawkes',
     language: 'JavaScript',
