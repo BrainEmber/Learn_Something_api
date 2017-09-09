@@ -35,7 +35,8 @@ class PlaylistsController < ApplicationController
 
   # DELETE /playlists/1
   def destroy
-    @playlist.destroy
+    @playlist = Playlist.destroy(params[:id])
+    render json: {status: 204}
   end
 
   private
