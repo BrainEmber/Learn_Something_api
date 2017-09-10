@@ -5,12 +5,12 @@ class PlaylistsController < ApplicationController
   def index
     @playlists = Playlist.all
 
-    render json: @playlists
+    render json: @playlists.to_json(include: :lessons)
   end
 
   # GET /playlists/1
   def show
-    render json: @playlist
+    render json: @playlist.to_json(include: :lessons)
   end
 
   # POST /playlists
@@ -35,7 +35,8 @@ class PlaylistsController < ApplicationController
 
   # DELETE /playlists/1
   def destroy
-    @playlist.destroy
+    @playlist = Playlist.destroy(params[:id])
+    render json: {status: 204}
   end
 
   private

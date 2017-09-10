@@ -5,12 +5,12 @@ class LessonsController < ApplicationController
   def index
     @lessons = Lesson.all
 
-    render json: @lessons
+    render json: @lessons.to_json(include: :playlists)
   end
 
   # GET /lessons/1
   def show
-    render json: @lesson
+    render json: @lesson.to_json(include: :playlists)
   end
 
   # POST /lessons
