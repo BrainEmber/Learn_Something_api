@@ -26,6 +26,7 @@ class PlaylistsController < ApplicationController
 
   # PATCH/PUT /playlists/1
   def update
+    @playlist = Playlist.find(params[:id])
     if @playlist.update(playlist_params)
       render json: @playlist
     else
