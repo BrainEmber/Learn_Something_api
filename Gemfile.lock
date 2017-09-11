@@ -44,6 +44,8 @@ GEM
     concurrent-ruby (1.0.5)
     erubi (1.6.1)
     ffi (1.9.18)
+    gem_bench (1.0.4)
+      bundler (~> 1.14)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.6)
@@ -123,6 +125,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  gem_bench
   listen (>= 3.0.5, < 3.2)
   pg (~> 0.18)
   puma (~> 3.7)
@@ -131,6 +134,9 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
+
+RUBY VERSION
+   ruby 2.4.1p111
 
 BUNDLED WITH
    1.15.4
