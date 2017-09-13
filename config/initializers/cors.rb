@@ -7,10 +7,18 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins ['localhost: 2080','curated-learning.herokuapp.com']
+    origins 'localhost: 2080'
 
     resource '*',
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
+
+  allow do 
+  	origins 'curated-learning.herokuapp.com'
+
+  	resource '*',
+  		headers: :any,
+  		methods: [:get, :options, :head]
+    end
   end
 end
